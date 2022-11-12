@@ -1,5 +1,6 @@
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  #source = "../../../../modules/services/webserver-cluster"
+  source = "github.com/ldnicolasmay/TerraformUpAndRunningModules//services/webserver-cluster?ref=v0.0.1"
 
   cluster_name  = "webservers-prod"
   instance_type = "t2.micro"
